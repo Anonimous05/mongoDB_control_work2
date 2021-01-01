@@ -16,18 +16,7 @@ class Details extends Component {
         this.setState({detailsMovie: res.data,video: res.data.movieTrailer});
     }
 
-    qualityHandler = (name) => {
-        const video = document.getElementById("video");
-        video.currentTime = this.state.time;
-        if(name === "1080Hd"){
-            this.setState({video: this.state.detailsMovie.movieTrailerHd});
-        }else if(name === "720p"){
-            this.setState({video: this.state.detailsMovie.movieTrailer});
-        }
-    };
-
     render() {
-        console.log(this.state.time);
         return (
             <div className="detailsContainer">
                 {this.state.detailsMovie !== null ? (
@@ -49,7 +38,6 @@ class Details extends Component {
                         </div>
                         <div className="trailerBlock">
                             <video id="video"
-                                onTimeUpdateCapture={(e) => e.target.currentTime > 0 && this.setState({time: e.target.currentTime})}
                                    src={axiosURL + '/videos/' + this.state.video}
                                 controls="controls" poster={axiosURL + '/images/' + this.state.detailsMovie.details.movieImage}
                             >
