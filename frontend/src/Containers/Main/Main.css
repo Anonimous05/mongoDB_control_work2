@@ -1,0 +1,82 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.img {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+}
+.img img {
+    width: 100%;
+    height: 305px;
+    margin-top: 5px;
+}
+.movie_block {
+    width: 300px;
+    margin-left: 20px;
+    border: 2px solid #242b2e;
+}
+.movie_block p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'monospace',sans-serif;
+}
+.movie_block button {
+    width: 100%;
+    background: #242b2e;
+    transition: all 0.5s;
+    border: 2px solid transparent;
+    outline: none;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.movie_block button:hover {
+    color: #242b2e;
+    border: 2px solid #242b2e;
+    background: #ffffff;
+}
+.movie_block button:focus {
+    color: #32b3ff;
+    background: #1c222e;
+}
+.controls {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.found input {
+    width: 45em;
+    height: 30px;
+    background: white;
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+    font-size: 20px;
+    color: #242b2e;
+    font-family: monospace;
+}
+.categories select {
+    height: 32px;
+    position: absolute;
+    margin-left: -140px;
+    border-radius: 2px;
+    text-align: center;
+    background: #32b3ff;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+.categories select>option{
+    color: #242b2e;
+    background: #dcdcdc;
+    padding: 5px;
+}

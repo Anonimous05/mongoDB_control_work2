@@ -1,0 +1,35 @@
+.detailsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+.trailerBlock {
+    width: 55%;
+}
+.trailerBlock video {
+    width: 99%;
+    border: 2px solid #ccc;
+    outline: none;
+}
+.detailsText {
+    width: 45%;
+}
+.movieName {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+.category {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.movieDescription {
+    color: #cccc;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
