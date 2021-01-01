@@ -42,7 +42,9 @@ class Details extends Component {
                                 controls="controls" poster={axiosURL + '/images/' + this.state.detailsMovie.details.movieImage}
                             >
                             </video>
-                            <select onChange={(e) => this.setState({video: e.target.value})}>
+                            <select onChange={(e) => this.setState({video: e.target.value === "1080Hd" ? this.state.detailsMovie.movieTrailerHd :
+                                    this.state.detailsMovie.movieTrailer
+                            })}>
                                 <option hidden>Выбрать качество</option>
                                 <option value="1080Hd">1080 HD</option>
                                 <option value="720p">720 p</option>
